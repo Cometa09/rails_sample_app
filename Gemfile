@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.0"
+ruby "2.7.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
@@ -15,6 +15,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'sdoc', group: :doc
+gem 'net-protocol'
 
 
 # Use sqlite3 as the database for Active Record
@@ -48,7 +49,7 @@ gem "jbuilder"
 gem "tzinfo-data"
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+gem "bootsnap"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -61,6 +62,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'byebug'
   gem 'spring'
+  gem 'pry-doc'
 end
 
 group :development do
@@ -82,6 +84,8 @@ group :test do
   gem 'minitest-reporters'
   gem 'mini_backtrace'
   gem 'guard-minitest'
+  gem 'railties'
+  gem 'thor'
 end
 
 group :production do
