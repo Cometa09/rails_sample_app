@@ -1,12 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* примеси, переменные и пр.*/
+
+$gray-medium-light: #eaeaea;
+
 /* общие */
 
 body {
-	padding-top: 20px;
+	padding-top: 60px;
 }
-
 
 section {
 	overﬂow: auto;
@@ -18,13 +21,13 @@ textarea {
 
 .center {
 	text-align: center;
-}
-
-.center h1 {
-	margin-bottom: 10px;
+	h1 {
+		margin-bottom: 10px;
+	}
 }
 
 /* правила для текста */
+
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 }
@@ -42,7 +45,7 @@ h2 {
 	margin-bottom: 30px;
 	text-align: center;
 	font-weight: normal;
-	color: #777;
+	color: $gray-light;
 }
 
 p {
@@ -51,48 +54,43 @@ p {
 }
 
 /* заголовок */
+
 #logo {
 	ﬂoat: left;
 	margin-right: 10px;
 	font-size: 1.7em;
-	color: #fff;
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: -1px;
 	padding-top: 9px;
 	font-weight: bold;
-}
-
-#logo:hover {
-	color: #fff;
-	text-decoration: none;
+	&:hover {
+		color: white;
+		text-decoration: none;
+	}
 }
 
 /* подвал */
 footer {
-	margin-top: 45px;
-	padding-top: 5px;
-	border-top: 1px solid #eaeaea;
-	color: #777;
-}
-
-footer a {
-	color: #555;
-}
-
-footer a:hover {
-	color: #222;
-}
-
-footer small {
-	ﬂoat: left;
-}
-
-footer ul {
-	ﬂoat: right;
-	list-style: none;
-}
-
-footer ul li {
-	ﬂoat: left;
-	margin-left: 15px;
+		margin-top: 45px;
+		padding-top: 5px;
+		border-top: 1px solid #eaeaea;
+		color: #777;
+		a {
+			color: #555;
+			&:hover {
+			color: #222;
+			}
+		}
+	small {
+		ﬂoat: left;
+	}
+	ul {
+		ﬂoat: right;
+		list-style: none;
+		li {
+			ﬂoat: left;
+			margin-left: 15px;
+		}
+	}
 }
