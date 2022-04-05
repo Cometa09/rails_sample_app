@@ -17,6 +17,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'sdoc', group: :doc
 gem 'net-protocol'
+gem 'bcrypt'
 
 
 # Use sqlite3 as the database for Active Record
