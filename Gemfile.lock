@@ -328,7 +328,7 @@ DEPENDENCIES
   net-protocol
   pg
   pry-doc
-  puma (~> 5.0)
+  puma
   rails (~> 7.0.2, >= 7.0.2.3)
   rails-controller-testing
   rails_12factor
